@@ -5,8 +5,12 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MOONMOONOSS/pulsy"
+    "url": "git+https://github.com/MOONMOONOSS/pulsy.git"
   },
+  "files": [
+    "native/index.node",
+    "lib"
+  ],
   "author": "Joseph \"Dunkel\" Zurowski <Dunklheit@users.noreply.github.com>",
   "license": "Unlicense",
   "dependencies": {
