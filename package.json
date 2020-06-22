@@ -1,6 +1,6 @@
 {
   "name": "pulsy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple internal wrapper for the Pulsar consumer client written in Rust.",
   "main": "lib/index.js",
   "repository": {
@@ -8,6 +8,9 @@
     "url": "git+https://github.com/MOONMOONOSS/pulsy.git"
   },
   "files": [
+    "native/src",
+    "native/build.rs",
+    "native/Cargo.toml",
     "native/index.node",
     "lib"
   ],
@@ -26,7 +29,9 @@
     "node-pre-gyp": "github:amilajack/node-pre-gyp",
     "node-pre-gyp-github": "^1.4.3"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@MOONMOONOSS" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@MOONMOONOSS"
+  },
   "scripts": {
     "install": "node-pre-gyp install --fallback-to-build=false || neon build --release",
     "package": "node-pre-gyp package",
