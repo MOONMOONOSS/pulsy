@@ -1,6 +1,6 @@
 [package]
 name = "pulsy"
-version = "0.1.0"
+version = "1.0.1"
 authors = ["Joseph \"Dunkel\" Zurowski <Dunklheit@users.noreply.github.com>"]
 license = "Unlicense"
 build = "build.rs"

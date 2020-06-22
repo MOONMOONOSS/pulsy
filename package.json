@@ -1,6 +1,6 @@
 {
   "name": "pulsy",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "A simple internal wrapper for the Pulsar consumer client written in Rust.",
   "main": "lib/index.js",
   "repository": {
