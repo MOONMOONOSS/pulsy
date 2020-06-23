@@ -24,4 +24,6 @@ script:
   - npm test
   # Publish when using '[publish binary]' keywords
   - COMMIT_MESSAGE=$(git log --format=%B --no-merges -n 1 | tr -d '\n')
+  # Excludes the bulky Rust target folder from the published build
+  - rm -rf native/target
   - if [[ ${COMMIT_MESSAGE} =~ "[publish binary]" ]]; then npm run upload-binary || exit 0; fi;
