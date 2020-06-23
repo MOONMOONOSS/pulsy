@@ -16,6 +16,10 @@ before_install:
   - sh /tmp/rustup.sh -y
   - export PATH="$HOME/.cargo/bin:$PATH"
   - if [ "$TRAVIS_OS_NAME" != "windows" ]; then source "$HOME/.cargo/env"; fi
+  # Set correct toolchain to allow Windows builds to pass
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then rustup toolchain default stable-x86_64-pc-windows-msvc; fi
+  # Output the current toolchains to the log if on Windows for sanity checking
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then rustup toolchain list; fi
   # Install NPM packages
   - node -v
   - npm -v
