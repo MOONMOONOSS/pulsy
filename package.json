@@ -8,9 +8,6 @@
     "url": "git+https://github.com/MOONMOONOSS/pulsy.git"
   },
   "files": [
-    "native/src",
-    "native/build.rs",
-    "native/Cargo.toml",
     "native/index.node",
     "lib"
   ],
