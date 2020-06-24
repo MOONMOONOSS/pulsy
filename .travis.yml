@@ -7,7 +7,6 @@ os:
   - windows
 language: node_js
 node_js:
-  - node
   - 12
 cache: cargo
 before_install:
